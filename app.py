@@ -5,13 +5,13 @@ from flask import Flask, jsonify, request
 app = Flask(__name__)
 
 # Environment Variables se Token aur Chat ID uthayega
-TELEGRAM_BOT_TOKEN = os.environ.get("TELEGRAM_BOT_TOKEN")
-TELEGRAM_CHAT_ID = os.environ.get("TELEGRAM_CHAT_ID")
+TELEGRAM_BOT_TOKEN = os.environ.get("8993700626:AAEbPXFm7lIPWMCEHWWQCdUKswUe8aary6k")
+TELEGRAM_CHAT_ID = os.environ.get("8993700626")
 
 
 def send_telegram(msg):
-    url = f"https://api.telegram.org/bot{TELEGRAM_BOT_TOKEN}/sendMessage"
-    payload = {"chat_id": TELEGRAM_CHAT_ID, "text": msg, "parse_mode": "Markdown"}
+    url = f"https://api.telegram.org/bot{8993700626:AAEbPXFm7lIPWMCEHWWQCdUKswUe8aary6k}/sendMessage"
+    payload = {"chat_id": 8993700626, "text": msg, "parse_mode": "Markdown"}
     try:
         requests.post(url, json=payload)
     except Exception as e:
